@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<hr>
+<div class="container">
+    <app-custom-dropdown [options]="values" [placeholder]="placeholder" (onSelection)="changeOption($event)">
+    </app-custom-dropdown>
+    <p class="container-label" *ngIf="selectedValue else noValueBlock">Selected Value: {{ selectedValue }}</p>
+    <ng-template class="container-label" #noValueBlock>
+        <p>No Option Selected</p>
+    </ng-template>
+</div>
