@@ -13,6 +13,7 @@
         justify-content: space-between;
         align-items: center;
         box-shadow: 3px 4px 9px #e0e0e0;
+        cursor: pointer;
         
         .placeholder{
             color: #c0c0c0;
@@ -28,10 +29,9 @@
         border-radius: 5px;
         margin-top: 2px;
         box-shadow: 3px 4px 9px #e0e0e0;
-        position: absolute;
-        width: 29.5%;
         z-index: 1;
         background: #fff;
+        cursor: pointer;
 
         ul{
             list-style: none;
