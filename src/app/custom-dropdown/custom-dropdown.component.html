@@ -1,15 +1,15 @@
 <div class="dropdown-container">
-  <button class="dropdown-btn" (click)="toggleDropdown()">
+  <button class="dropdown-btn" (click)="toggleDropdown()" tabindex="0">
     <span *ngIf="selectedVal">{{ selectedVal}}</span>
     <span *ngIf="!selectedVal" class="placeholder">{{ placeholder}}</span>
-    <img class="dropdown-icon" [ngClass]="{'rotateImg': isDropDownOpen }" src="assets/dropdown-icon.png" width="20px">
+    <img class="dropdown-icon" [ngClass]="{'rotateImg': isDropDownOpen }" src="assets/images/dropdown_icon.svg" width="20px">
   </button>
 
   <div class="dropdown-list-group" *ngIf="isDropDownOpen">
     <ul>
-      <li (click)="selectOption()" class="dropdown-list-item">- Select -</li>
-      <li (click)="selectOption(item)" class="dropdown-list-item"
-        *ngFor="let item of options">
+      <li (click)="selectOption()" class="dropdown-list-item" (keydown.enter)="selectOption()" tabindex="0">- Select -</li>
+      <li (click)="selectOption(item)" class="dropdown-list-item" (keydown.enter)="selectOption(item)"
+        *ngFor="let item of options" tabindex="0">
         {{ item.value }}
       </li>
     </ul>

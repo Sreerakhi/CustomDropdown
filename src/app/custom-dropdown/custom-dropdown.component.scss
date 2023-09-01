@@ -1,18 +1,19 @@
 .dropdown-container{
     background-color: #fff;
+    width: 300px;
 
     .dropdown-btn{
-        width: 100%;
+        width: 300px;
         height: 35px;
         background: #fff;
-        border: 1px solid #c0c0c0;
-        border-radius: 5px;
+        border: 1px solid #e336ec;
+        border-radius: 8px;
         text-align: left;
         padding: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 3px 4px 9px #e0e0e0;
+        box-shadow: 3px 2px 4px 0px rgba(57,63,70,0.08);
         cursor: pointer;
         
         .placeholder{
@@ -24,11 +25,13 @@
         }
     }
     .dropdown-list-group{
-        width: 100%;
-        border: 1px solid #c0c0c0;
-        border-radius: 5px;
+        width: 300px !important;
+        position: absolute;
+        width: max-content;
+        border: 1px solid #e336ec;
+        border-radius: 8px;
         margin-top: 2px;
-        box-shadow: 3px 4px 9px #e0e0e0;
+        box-shadow: 3px 2px 4px 0px rgba(57,63,70,0.08);
         z-index: 1;
         background: #fff;
         cursor: pointer;
@@ -50,7 +53,7 @@
             align-items: center;
 
             &:hover{
-                background-color: #dbf7ff;
+                background-color: #e6f6fc;
             }
         }
     }
